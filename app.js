@@ -56,5 +56,9 @@ app.use(function(err, req, res, next) {
     });
 });
 
+app.get('/test',function(res,req){
+    res.send('hello world!');
+});
+
 
 module.exports = app;
