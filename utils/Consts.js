@@ -4,15 +4,29 @@
  * Contain some constants
  *
  */
-var CONFIG = (function() {
-     var mediaType = {
+var mediaType = {
          1: 'image',
          2: 'video',
          3: 'sound',
-     };
+};
+
+var roles = {
+        1: 'guitar',
+        2: 'drum',
+        3: 'voice'
+}
+
+var getMediaConst = function(name)
+{
+       return mediaType[name];
+}
+
+var getRoleConst = function(name)
+{
+       return roles[name];
+}
 
 
-     return {
-        get: function(name) { return mediaType[name]; }
-    };
-})();
+
+module.exports.getMediaConst = getMediaConst;
+module.exports.getRoleConst = getRoleConst;
