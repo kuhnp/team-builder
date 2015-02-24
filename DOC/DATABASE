@@ -1,0 +1,29 @@
+--------USER--------
+Name -
+Surname -
+username PK
+password -
+token -
+email --
+street
+postcode
+city - 
+
+-------BAND--------
+id PK 
+Name
+kind
+location
+
+-------MEDIA------
+id PK
+Name 
+type
+src
+bandID OK
+
+BAND  <---N/N----> USER 
+MEDIA <---N/1----> BAND 
+
+
+
